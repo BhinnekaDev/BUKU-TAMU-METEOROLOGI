@@ -1,6 +1,5 @@
 import React from "react";
 import TextButtonFaq from "./TextButtonFaq";
-import TextProfileFaq from "./TextButtonFaq";
 
 export default function CardFaq() {
   return (
