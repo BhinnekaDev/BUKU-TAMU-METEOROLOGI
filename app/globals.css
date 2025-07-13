@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #002c94;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e058f;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #160557;
+}
+
+/* globals.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/MontserratAlternates-Thin.otf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/MontserratAlternates-ExtraLight.otf")
+    format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/MontserratAlternates-Light.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/MontserratAlternates-Regular.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/MontserratAlternates-Medium.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/MontserratAlternates-SemiBold.otf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/MontserratAlternates-Bold.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/MontserratAlternates-ExtraBold.otf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/MontserratAlternates-Black.otf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/MontserratAlternates-BoldItalic.otf")
+    format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* === Styling for DatePicker Dropdown === */
+.custom-datepicker-align.react-datepicker {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #cbd5e0; /* tailwind's border-blue-200 */
+  font-size: 0.875rem; /* text-sm */
+  overflow: hidden;
+}
+
+/* Kalender (kiri) */
+.custom-datepicker-align .react-datepicker__month-container {
+  width: 230px;
+}
+
+/* Time Picker (kanan) */
+.custom-datepicker-align .react-datepicker__time-container {
+  width: 100px;
+  margin-top: 0;
+  border-left: 1px solid #cbd5e0;
+}
+
+.custom-datepicker-align .react-datepicker__time {
+  width: 100%;
+  padding-top: 0;
+}
+
+.custom-datepicker-align .react-datepicker__time-box {
+  width: 100%;
+}
+
+.custom-datepicker-align .react-datepicker__time-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
